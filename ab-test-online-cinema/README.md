@@ -4,61 +4,83 @@
 
 ## Project Overview
 
-This project analyzes the results of an A/B test conducted in an online cinema service to evaluate the impact of product changes on user activity.
+This project analyzes the results of an A/B test conducted for an online cinema recommendation system.
 
-The analysis includes data validation, user segmentation, statistical hypothesis testing, and activity metrics evaluation.
+The objective is to evaluate whether the new recommendation algorithm increases the proportion of users who start watching a movie.
+
+The analysis includes data cleaning, statistical hypothesis testing, and user activity evaluation.
+
+---
 
 ## Tools & Technologies
 
-* Python
-* Pandas
-* NumPy
-* SciPy
-* Matplotlib
-* Jupyter Notebook
+- Python
+- Pandas
+- NumPy
+- SciPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
 
 ## Project Files
 
-- [Jupyter Notebook](online_cinema_ab_test.ipynb)
-- Dataset: data/Event_click.xlsx
+- Jupyter Notebook: `online_cinema_ab_test.ipynb`
+- Dataset: `data/Event_click.xlsx`
+
+---
 
 ## Project Tasks
 
-* Data loading and preprocessing
-* Data quality assessment
-* Detection of users assigned to multiple experiment groups
-* Data cleaning and preparation
-* Control and test group comparison
-* Conversion analysis
-* Statistical hypothesis testing (t-test)
-* DAU and WAU analysis
+- Load and inspect the dataset
+- Assess data quality
+- Remove missing observations
+- Exclude users assigned to multiple experiment groups
+- Compare conversion rates between the control and test groups
+- Test data normality using the Shapiro–Wilk test
+- Compare groups using the Mann–Whitney U test
+- Calculate and visualize DAU and WAU metrics
+- Summarize the experimental results
+
+---
 
 ## Results
 
-* Cleaned and validated experiment data
-* Identified and removed users assigned to multiple groups
-* Compared key metrics between test and control groups
-* Performed statistical significance testing
-* Analyzed user activity using DAU and WAU metrics
-* Formulated conclusions regarding the effectiveness of the tested changes
+- Cleaned and validated the experimental dataset
+- Removed users assigned to multiple experimental groups
+- Verified that the data were not normally distributed
+- Applied the Mann–Whitney U test to compare conversion rates
+- Calculated DAU and WAU to evaluate user activity
+- Drew conclusions about the effectiveness of the recommendation system
+
+---
 
 ## Key Findings
 
-- Cleaned and validated A/B test data.
-- Removed users assigned to multiple experiment groups.
-- Calculated conversion metrics for control and test groups.
-- Performed statistical hypothesis testing.
-- Evaluated the impact of product changes on user behavior.
+- Missing values and inconsistent observations were successfully removed.
+- The Shapiro–Wilk test showed that the conversion data were not normally distributed.
+- The Mann–Whitney U test revealed a statistically significant difference between the control and test groups.
+- DAU and WAU remained generally stable during the observation period. The decrease in the final week is explained by the incomplete observation period.
+- The new recommendation system demonstrated a positive impact on conversion to movie playback.
+
+---
 
 ## Skills Demonstrated
 
 - Data Cleaning
-- Exploratory Data Analysis
+- Exploratory Data Analysis (EDA)
 - A/B Testing
-- Statistical Testing
-- Python (Pandas, NumPy, SciPy)
+- Statistical Hypothesis Testing
+- User Behavior Analysis
+- Time Series Metrics (DAU & WAU)
 - Data Visualization
-- 
+- Python (Pandas, NumPy, SciPy, Matplotlib, Seaborn)
+
+---
+
 ## Author
 
-Daria Sinitsyna — Junior Data Analyst
+**Daria Sinitsyna**
+
+Junior Data Analyst
